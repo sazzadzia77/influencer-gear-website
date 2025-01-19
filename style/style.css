@@ -152,7 +152,7 @@ header{
     row-gap: 30px;
 }
 .popular_collection_card{
-    /* max-width: 329px; */
+    max-width: 329px;
     padding: 17px 15px 28px 15px;
     /* background: rgb(255, 255, 255); */
     border-radius: 5px;
@@ -227,7 +227,9 @@ header{
   .popular_collection_cards{
     grid-template-columns: 1fr;
     column-gap: 0px;
+    /* justify-items: auto; */
   }
+  
   .popular_collection_card{
     max-width: calc(100% - 30px);
   }
@@ -256,3 +258,9 @@ header{
         margin: 30px auto;
     }
 }
+
+/* @media screen and (min-width: 992px){
+    .popular_collection_cards{
+        justify-items: center;
+    }
+} */
