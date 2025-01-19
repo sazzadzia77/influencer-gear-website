@@ -103,6 +103,31 @@ header{
     width: 100%;
 }
 
+/* ! Brand container Design */
+
+.brand{
+    max-width: 1110px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    /* box-shadow:0 5px 15px rgba(0, 0, 0, 0.2) */
+
+}
+.brand hr{
+    max-width: 1100px;
+    /* margin: 0 auto; */
+    border-color: #6467640b;
+}
+.brand_container{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 60px;
+    padding: 35px 60px;
+    
+}
+.brand img{
+    width: 100%;
+}
+
 
 
 
@@ -127,11 +152,40 @@ header{
     .header_banner_right{
         padding: 20px;
     }
+    .brand{
+        max-width: 90%;
+    }
+    .brand_container{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .brand_container > .same:nth-child(5), 
+  .brand_container > .same:nth-child(6),
+  .brand_container > .same:nth-child(7) {
+    grid-column: span 1; /* Ensure items span 1 column */
+  }
 }
 
 
 /* ? Resposive max-width 992px */
 
 @media screen and (min-width: 576px) and (max-width: 992px){
+    header{
+        padding: 10px 10px;
+    }
+    .header_banner{
+        flex-direction: column-reverse;
 
+    }
+    .header_banner_left{
+        max-width: 90%;
+        margin: 20px auto;
+        text-align: center;
+    }
+    .header_banner_left > p{
+        margin: 30px auto;
+    }
 }
